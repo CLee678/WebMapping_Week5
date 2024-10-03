@@ -56,11 +56,6 @@
 
     <footer>
         <p>Map authored by Cayley, Wing Yee Lee</p>
-        <p>The principles I used are "Choose a suitable map library", "Use relative units and breakpoints" and "Test and debug your map design".</br>
-            "Choose a suitable map library": I changed to Mapbox basemap as it shows the state boundaries and state names. The color of the basemap is light, making the circle markers stand out more.</br>
-            "Use relative units and breakpoints": I changed the capacity from MW to percentages. Using percentages as a relative unit is more intuitive for people to understand whether it is a large/small amount of capacity produced.</br>
-            "Test and debug your map design": For the small circle markers, it was difficult to click, and they did not zoom in to the respective locations. I changed the weight, and I added a 'click' and 'flyTo' method so that upon clicking, the location zooms in to the center of the map. The zoom in is slow, and I initially used the "setView" method, but the circle marker didn't show in the center of the map, so I switched to "flyTo".</br>
-            In response to the professor's feedback, I adjusted the solar plants to be more transparent."</p>
     </footer>
 
     <script src="power-plants.js"></script>
